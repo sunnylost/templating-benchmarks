@@ -5,7 +5,7 @@ process.env.NODE_ENV = 'production';
 var async = require('raptor-async');
 var fs = require('fs');
 var nodePath = require('path');
-var UglifyJS = require("uglify-js");
+var UglifyJS = require("uglify-js-harmony");
 var zlib = require('zlib');
 
 require("babel-register")({
