@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title><%= this.title%></title>
+    </head>
+    <body>
+        <p><%= this.text%></p>
+        <%@ for project in this.projects %>
+            <a href="<%= project.url%>"><%= project.name%></a>
+            <p><%= project.description%></p>
+        <%@ endfor %>
+        <% if ( !this.projects || !this.projects.length ) { %>
+            No projects
+        <% } %>
+    </body>
+</html>

@@ -3,6 +3,7 @@
 /.idea/
 /npm-debug.log
 /node_modules
+/output
 /*.sublime-workspace
 *.orig
 .DS_Store

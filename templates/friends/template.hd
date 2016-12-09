@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friends</title>
+</head>
+<body>
+    <div class="friends">
+    <%@ for friend in this.friends %>
+    <div class="friend">
+    <ul>
+        <li>Name: <%= friend.getFullNameDust %></li>
+        <li>
+            Balance: <%= friend.balance %>
+        </li>
+        <li>
+            Age: <%= friend.age %>
+        </li>
+        <li>
+            Address: <%= friend.address %>
+        </li>
+        <li>
+            Image: <img src="<%= friend.picture %>">
+        </li>
+        <li>
+            Company: <%= friend.company %>
+        </li>
+        <li>
+            Email: <a href="mailto:<%= friend.email %>"><%= friend.email %></a>
+        </li>
+        <li>
+            About: <%= friend.about %>
+        </li>
+        <%@ for tag in friend.tags %>
+        <li>
+            Tags:
+            <ul>
+                <li>
+                    <%= tag %>
+                </li>
+            </ul>
+        </li>
+        <%@ endfor %>
+        <%@ for f in friend.friends %>
+        <li>
+            Friends:
+            <ul>
+                <li>
+                <%= f.name %> (<%= f.id %>)
+                </li>
+            </ul>
+        </li>
+        <%@ endfor %>
+    </ul>
+</div>
+    <%@ endfor %>
+    </div>
+</body>
+</html>

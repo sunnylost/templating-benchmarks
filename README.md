@@ -55,53 +55,60 @@ Higher numbers are better.
                       RUNTIME PERFORMANCE
                       ===================
                       friends
-                   ✓ marko »    4,952 op/s (fastest)
-                    ✗ dust »      977 op/s (80.27% slower)
+       ✓ hornbill-template »    8,214 op/s (fastest)
+                   ✗ marko »    3,111 op/s (62.13% slower)
+                    ✗ dust »      671 op/s (91.83% slower)
 
                       if-expression
-                   ✓ marko »  417,340 op/s (fastest)
-                     ✗ pug »  255,761 op/s (38.72% slower)
-                    ✗ jade »   35,241 op/s (91.56% slower)
+       ✓ hornbill-template »  387,844 op/s (fastest)
+                   ✗ marko »  318,021 op/s (18.00% slower)
+                     ✗ pug »  204,302 op/s (47.32% slower)
+                    ✗ jade »   23,224 op/s (94.01% slower)
 
                       projects-escaped
-      ✓ marko (native-for) »  101,188 op/s (fastest)
-                   ✗ marko »   93,283 op/s (7.81% slower)
-              ✗ handlebars »   52,683 op/s (47.94% slower)
-                    ✗ dust »   41,828 op/s (58.66% slower)
+       ✓ hornbill-template »  113,203 op/s (fastest)
+                   ✗ marko »   67,567 op/s (40.31% slower)
+      ✗ marko (native-for) »   60,929 op/s (46.18% slower)
+              ✗ handlebars »   41,960 op/s (62.93% slower)
+                    ✗ dust »   31,546 op/s (72.13% slower)
 
                       projects-unescaped
-      ✓ marko (native-for) »  418,245 op/s (fastest)
-                   ✗ marko »  399,888 op/s (4.39% slower)
-              ✗ handlebars »  150,854 op/s (63.93% slower)
-                    ✗ dust »   82,640 op/s (80.24% slower)
+      ✓ marko (native-for) »  338,653 op/s (fastest)
+       ✗ hornbill-template »  338,240 op/s (0.12% slower)
+                   ✗ marko »  313,459 op/s (7.44% slower)
+              ✗ handlebars »  120,148 op/s (64.52% slower)
+                    ✗ dust »   63,012 op/s (81.39% slower)
 
                       reverse-helper
-                   ✓ marko »  497,304 op/s (fastest)
-                    ✗ dust »  260,478 op/s (47.62% slower)
+                   ✓ marko »  379,237 op/s (fastest)
+                    ✗ dust »  231,068 op/s (39.07% slower)
 
                       search-results
-                   ✓ marko »   43,343 op/s (fastest)
-                    ✗ dust »   10,717 op/s (75.27% slower)
+       ✓ hornbill-template »   78,950 op/s (fastest)
+                   ✗ marko »   28,711 op/s (63.63% slower)
+                    ✗ dust »    8,247 op/s (89.55% slower)
 
                       simple-1
-                   ✓ marko »  237,885 op/s (fastest)
-                     ✗ pug »  232,903 op/s (2.09% slower)
-                     ✗ dot »  209,090 op/s (12.10% slower)
-              ✗ handlebars »  120,581 op/s (49.31% slower)
-                    ✗ dust »   38,494 op/s (83.82% slower)
-                    ✗ jade »   37,203 op/s (84.36% slower)
-                ✗ nunjucks »   27,635 op/s (88.38% slower)
-                     ✗ vue »   10,082 op/s (95.76% slower)
-                    ✗ swig »    6,853 op/s (97.12% slower)
-                   ✗ react »    5,497 op/s (97.69% slower)
+       ✓ hornbill-template »  338,612 op/s (fastest)
+                     ✗ pug »  196,683 op/s (41.91% slower)
+                   ✗ marko »  181,671 op/s (46.35% slower)
+                     ✗ dot »  181,307 op/s (46.46% slower)
+              ✗ handlebars »   97,307 op/s (71.26% slower)
+                    ✗ dust »   74,406 op/s (78.03% slower)
+                    ✗ swig »   61,318 op/s (81.89% slower)
+                    ✗ jade »   29,585 op/s (91.26% slower)
+                ✗ nunjucks »   27,906 op/s (91.76% slower)
+                     ✗ vue »    9,128 op/s (97.30% slower)
+                   ✗ react »    4,132 op/s (98.78% slower)
 
                       simple-2
-                   ✓ marko »  367,742 op/s (fastest)
-                    ✗ dust »  100,594 op/s (72.65% slower)
+       ✓ hornbill-template »  337,810 op/s (fastest)
+                   ✗ marko »  247,820 op/s (26.64% slower)
+                    ✗ dust »   79,428 op/s (76.49% slower)
 
                       ui-components
-                   ✓ marko »   85,643 op/s (fastest)
-                   ✗ react »    5,281 op/s (93.83% slower)
+                   ✓ marko »   60,110 op/s (fastest)
+                   ✗ react »    3,956 op/s (93.42% slower)
 ```
 <!-- </performance> -->
 
@@ -114,82 +121,96 @@ Lower numbers are better.
                       COMPILED SIZE (gzipped/uncompressed)
                       ====================================
                       friends
-                   ✓ marko »   463 bytes gzipped     905 bytes uncompressed
+                   ✓ marko »   472 bytes gzipped     920 bytes uncompressed
                                       (smallest)                 (smallest)
                     ✗ dust »   489 bytes gzipped    1387 bytes uncompressed
-                                    5.32% larger              34.75% larger
+                                    3.48% larger              33.67% larger
+       ✗ hornbill-template »   530 bytes gzipped    1494 bytes uncompressed
+                                   10.94% larger              38.42% larger
 
                       if-expression
-                   ✓ marko »   272 bytes gzipped     454 bytes uncompressed
+                   ✓ marko »   281 bytes gzipped     469 bytes uncompressed
                                       (smallest)                 (smallest)
+       ✗ hornbill-template »   350 bytes gzipped     649 bytes uncompressed
+                                   19.71% larger              27.73% larger
                     ✗ jade »   388 bytes gzipped    1057 bytes uncompressed
-                                   29.90% larger              57.05% larger
-                     ✗ pug »   907 bytes gzipped    2147 bytes uncompressed
-                                   70.01% larger              78.85% larger
+                                   27.58% larger              55.63% larger
+                     ✗ pug »   906 bytes gzipped    2147 bytes uncompressed
+                                   68.98% larger              78.16% larger
 
                       projects-escaped
-                   ✓ marko »   238 bytes gzipped     364 bytes uncompressed
+                   ✓ marko »   247 bytes gzipped     379 bytes uncompressed
                                       (smallest)                 (smallest)
-      ✗ marko (native-for) »   259 bytes gzipped     392 bytes uncompressed
-                                    8.11% larger               7.14% larger
                     ✗ dust »   262 bytes gzipped     563 bytes uncompressed
-                                    9.16% larger              35.35% larger
+                                    5.73% larger              32.68% larger
+      ✗ marko (native-for) »   268 bytes gzipped     407 bytes uncompressed
+                                    7.84% larger               6.88% larger
+       ✗ hornbill-template »   347 bytes gzipped     716 bytes uncompressed
+                                   28.82% larger              47.07% larger
               ✗ handlebars »   553 bytes gzipped    1551 bytes uncompressed
-                                   56.96% larger              76.53% larger
+                                   55.33% larger              75.56% larger
 
                       projects-unescaped
-                   ✓ marko »   242 bytes gzipped     367 bytes uncompressed
+                   ✓ marko »   250 bytes gzipped     382 bytes uncompressed
                                       (smallest)                 (smallest)
-      ✗ marko (native-for) »   262 bytes gzipped     395 bytes uncompressed
-                                    7.63% larger               7.09% larger
                     ✗ dust »   268 bytes gzipped     595 bytes uncompressed
-                                    9.70% larger              38.32% larger
+                                    6.72% larger              35.80% larger
+      ✗ marko (native-for) »   272 bytes gzipped     410 bytes uncompressed
+                                    8.09% larger               6.83% larger
+       ✗ hornbill-template »   328 bytes gzipped     613 bytes uncompressed
+                                   23.78% larger              37.68% larger
               ✗ handlebars »   530 bytes gzipped    1573 bytes uncompressed
-                                   54.34% larger              76.67% larger
+                                   52.83% larger              75.72% larger
 
                       reverse-helper
                     ✓ dust »   151 bytes gzipped     321 bytes uncompressed
-                                      (smallest)              36.45% larger
-                   ✗ marko »   158 bytes gzipped     204 bytes uncompressed
-                                    4.43% larger                 (smallest)
+                                      (smallest)              31.78% larger
+                   ✗ marko »   167 bytes gzipped     219 bytes uncompressed
+                                    9.58% larger                 (smallest)
 
                       search-results
-                   ✓ marko »   531 bytes gzipped    1185 bytes uncompressed
+                   ✓ marko »   542 bytes gzipped    1200 bytes uncompressed
                                       (smallest)                 (smallest)
                     ✗ dust »   545 bytes gzipped    1523 bytes uncompressed
-                                    2.57% larger              22.19% larger
+                                    0.55% larger              21.21% larger
+       ✗ hornbill-template »   674 bytes gzipped    2340 bytes uncompressed
+                                   19.58% larger              48.72% larger
 
                       simple-1
-                   ✓ marko »   378 bytes gzipped     620 bytes uncompressed
+                   ✓ marko »   389 bytes gzipped     635 bytes uncompressed
                                       (smallest)                 (smallest)
                    ✗ react »   395 bytes gzipped     850 bytes uncompressed
-                                    4.30% larger              27.06% larger
-                    ✗ dust »   414 bytes gzipped     893 bytes uncompressed
-                                    8.70% larger              30.57% larger
+                                    1.52% larger              25.29% larger
+                    ✗ dust »   415 bytes gzipped     897 bytes uncompressed
+                                    6.27% larger              29.21% larger
+       ✗ hornbill-template »   445 bytes gzipped     834 bytes uncompressed
+                                   12.58% larger              23.86% larger
                      ✗ dot »   506 bytes gzipped     821 bytes uncompressed
-                                   25.30% larger              24.48% larger
+                                   23.12% larger              22.66% larger
                     ✗ jade »   523 bytes gzipped    1124 bytes uncompressed
-                                   27.72% larger              44.84% larger
-              ✗ handlebars »   615 bytes gzipped    1467 bytes uncompressed
-                                   38.54% larger              57.74% larger
+                                   25.62% larger              43.51% larger
+              ✗ handlebars »   617 bytes gzipped    1473 bytes uncompressed
+                                   36.95% larger              56.89% larger
                 ✗ nunjucks »   634 bytes gzipped    1433 bytes uncompressed
-                                   40.38% larger              56.73% larger
+                                   38.64% larger              55.69% larger
                     ✗ swig »   763 bytes gzipped    3707 bytes uncompressed
-                                   50.46% larger              83.27% larger
-                     ✗ pug »  1053 bytes gzipped    2317 bytes uncompressed
-                                   64.10% larger              73.24% larger
+                                   49.02% larger              82.87% larger
+                     ✗ pug »  1052 bytes gzipped    2317 bytes uncompressed
+                                   63.02% larger              72.59% larger
 
                       simple-2
-                   ✓ marko »   246 bytes gzipped     469 bytes uncompressed
+                   ✓ marko »   255 bytes gzipped     484 bytes uncompressed
                                       (smallest)                 (smallest)
                     ✗ dust »   268 bytes gzipped     648 bytes uncompressed
-                                    8.21% larger              27.62% larger
+                                    4.85% larger              25.31% larger
+       ✗ hornbill-template »   319 bytes gzipped     671 bytes uncompressed
+                                   20.06% larger              27.87% larger
 
                       ui-components
-                   ✓ marko »   168 bytes gzipped     200 bytes uncompressed
+                   ✓ marko »   179 bytes gzipped     219 bytes uncompressed
                                       (smallest)                 (smallest)
                    ✗ react »   204 bytes gzipped     310 bytes uncompressed
-                                   17.65% larger              35.48% larger
+                                   12.25% larger              29.35% larger
 ```
 <!-- </size> -->
 
