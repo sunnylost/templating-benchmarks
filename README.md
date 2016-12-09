@@ -41,9 +41,9 @@ NOTE 1: While React is not a "templating engine", it is commonly used to render 
 
 The following results were collected with the following setup:
 
-- Node.js v6.0.0
-- MacBook Pro (Retina, 15-inch, Mid 2014)
-- Processor: 2.8 GHz Intel Core i7
+- Node.js v6.9.1
+- MacBook Pro (Retina, 15-inch, Mid 2015)
+- Processor: 2.2 GHz Intel Core i7
 - Memory: 16 GB 1600 MHz DDR3
 
 ## Performance
